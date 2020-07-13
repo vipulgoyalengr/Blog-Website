@@ -1,0 +1,64 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+ <!-- <nav class="main-navigation">
+        <div class="navbar-header animated fadeInUp">
+            <a class="navbar-brand" routerLink = '../comp' routerLinkActive='active'><img src="assets/img/logo.PNG"></a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a routerLink = '../cert' routerLinkActive='active' class="nav-link">Certifications</a>
+            </li>
+            <li class="nav-list-item">
+                <a routerLink = '../comp' routerLinkActive='active' class="nav-link">Opportunities</a>
+            </li>
+            <li class="nav-list-item">
+                <a routerLink = '../publ' routerLinkActive='active' class="nav-link">Blog</a>
+            </li>
+            <li class="nav-list-item">
+                <a routerLink = '../intern' routerLinkActive='active' class="nav-link">Internship</a>
+            </li>
+            <li class="nav-list-item">
+                <a href='#' class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navStyle">
+        <a class="brand-navbar" href="#"><img src="assets/img/logo.png" alt="Responsive image" height="60px"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+            <span><i class="fas fa-align-right iconStyle"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navList">
+                <!-- <li class="nav-item active"><a href="#" class="nav-link"><i class="fas fa-home"></i>HOME<span class="sr-only">(current)</span></a></li> -->
+                <!-- <li class="nav-item">
+                    <a routerLink = '../cert' routerLinkActive='active' class="nav-link"><i class="fas fa-award"></i>Certifications</a>
+                </li> -->
+                <li class="nav-item">
+                    <a routerLink = '../comp' routerLinkActive='active' class="nav-link"><i class="fas fa-cogs"></i>Opportunities</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink = '../publ' routerLinkActive='active' class="nav-link"><i class="fas fa-briefcase"></i>Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink = '../intern' routerLinkActive='active' class="nav-link"><i class="fas fa-chalkboard"></i>Internship</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink = '../cont' routerLinkActive='active' class="nav-link"><i class="fas fa-phone"></i>Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink = '../about' routerLinkActive='active' class="nav-link"><i class="fas fa-users"></i>About</a>
+                </li>
+                <li class="nav-item" *ngIf="t1.activate">
+                    <a routerLink = '../login' routerLinkActive='active' class="nav-link"><i class="fas fa-users"></i>Login</a>
+                </li>
+                <li class="nav-item" *ngIf="!t1.activate">
+                    <a  class="nav-link" (click)="logout()"><i class="fas fa-users" ></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
