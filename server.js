@@ -7,7 +7,7 @@ const auth=require('../lawsite/e2e/backend/models/auth')
 var blog=require('../lawsite/e2e/backend/models/blogs')
 const checkauth=require('../lawsite/e2e/backend/models/check-auth')
 const express=require('express')
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const fs=require('fs');
 
 var app=express()
@@ -22,8 +22,15 @@ var cb=function(err) {
         console.log("connection failed");
     }
 };
-mongoose.connect("mongodb://localhost:27017/mongotube",{ useNewUrlParser: true , useUnifiedTopology: true ,useCreateIndex:true},cb);
-mongoose.connection;
+mongoose.connect("mongodb+srv://lex:HnpLEJ18R7kYaPMB@cluster0-td8xs.mongodb.net/<dbname>?retryWrites=true&w=majority")
+.then(()=>{
+console.log("Connected to Databases ")
+}).catch(()=>{
+    console.log("connection failed")
+});
+// mongoose.connect("mongodb://localhost:27017/mongotube",{ useNewUrlParser: true , useUnifiedTopology: true ,useCreateIndex:true},cb);
+
+// mongoose.connection;
 var bodyParser=require('body-parser')
 
 app.use(express.json({limit: '50mb'}))
@@ -189,7 +196,7 @@ app.get('/get_blogs',(req,res)=>{
         });
         });
 
-port=3000
+port=process.env.PORT || 3000
 app.listen(port,(res)=>{
     console.log(`listening on port ${port}`)
 })
