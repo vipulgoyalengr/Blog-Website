@@ -196,7 +196,7 @@ app.get('/get_blogs',(req,res)=>{
         });
         });
 
-port=process.env.PORT || 3000
+port=process.env.PORT || 3000;
 app.listen(port,(res)=>{
     console.log(`listening on port ${port}`)
 })
