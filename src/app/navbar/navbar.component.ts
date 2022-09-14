@@ -15,6 +15,14 @@ logout(){
   this.t1.logout();
 
 }
+divert1(){
+  this.t1.d1=true;
+
+  this.router.navigate(['/about']);}
+divert(){
+  this.t1.d1=false;
+
+  this.router.navigate(['/about']);}
   ngOnInit(): void {
   }
 

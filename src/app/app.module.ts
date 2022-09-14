@@ -23,6 +23,12 @@ import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { AuthInterceptor } from './auth-interceptor';
 import { AddEventComponent } from './add-event/add-event.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AddRemoveComponent } from './add-remove/add-remove.component';
+import { InternComponent } from './intern/intern.component';
+import {HashLocationStrategy,LocationStrategy} from '@angular/common';
+import { NewsComponent } from './news/news.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +47,11 @@ import { AddEventComponent } from './add-event/add-event.component';
     SubGuidelinesComponent,
     LoginComponent,
     SigninComponent,
-    AddEventComponent
+    AddEventComponent,
+    MessagesComponent,
+    AddRemoveComponent,
+    InternComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

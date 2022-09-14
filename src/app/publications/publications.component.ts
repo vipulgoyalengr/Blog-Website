@@ -9,7 +9,9 @@ import { combineLatest } from 'rxjs';
 })
 export class PublicationsComponent implements OnInit {
 x:any;
-y:any
+y:any;
+m:any;
+k=0;
 arr:any=[];
 
   constructor(public t1:LawsiteService) { 
@@ -22,7 +24,8 @@ arr:any=[];
     })
    
     this.t1.get_blogs().subscribe((res)=>{
-      this.x=res
+      this.m=res
+      this.x=this.m.reverse()
       console.log(this.x)
       for(let i=0;i<this.x.length;i++){
         console.log(this.x[i].Extension)
@@ -34,11 +37,27 @@ arr:any=[];
     //     // // this.upload=this.sanitizer.bypassSecurityTrustStyle(this.upload);
         // console.log(this.x[i].upload);
       });
+
     }
+    console.log(this.x)
+
+
+    // for(let i=this.x.length-1;i>=0;i--){
+    //   this.m[this.k]=this.x[i];
+    //   console.log(this.m)
+    //   console.log("k")
+    //   this.k++;
+    //       }
+    //       console.log(this.m)
           });
   }
 
 increment(){
+  this.t1.len2++;
+  if (((this.t1.len2*3)-this.y.length)<3){
+    this.t1.count1=false;
+    this.t1.count=true;  
+  }
 this.t1.increment().subscribe((res)=>{
   this.x=res
   console.log(this.x)
@@ -56,6 +75,11 @@ this.t1.increment().subscribe((res)=>{
       });
 }
 decrement(){
+  this.t1.len2--;
+  if(this.t1.len2==0){
+    this.t1.count=true;
+    this.t1.count1=true;
+  }
   this.t1.decrement().subscribe((res)=>{
     this.x=res
     console.log(this.x)

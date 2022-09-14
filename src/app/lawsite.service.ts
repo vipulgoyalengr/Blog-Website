@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http'
-import { AppRoutingModule } from './app-routing.module';
 import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class LawsiteService {
-  url="http://localhost:3000/";
+  url="api/";
 private token;count=false;count1=false;count0=true;
 private tokenTimer;
 activate =true
+d1;
+len2=0;
 count_len:any;
 private currentpage=1;
   constructor(private http:HttpClient,public router:Router) { }
@@ -24,9 +25,13 @@ posts(title,auth,h1,h2,h3,sh11,sh12,sh21,sh22,sh23,sh31,sh32,sh33,c1,c2,c3,c4,c5
 
 save_img(name,ext,imgUri){
   console.log("fsdfs");
- return this.http.post("http://localhost:3000/image",{"imagepath":name,'ext':ext, "image":imgUri});
+ return this.http.post("api/image",{"imagepath":name,'ext':ext, "image":imgUri});
 
 }
+get_message(){
+  return  this.http.get(this.url+"get_message");
+}
+
 // save_img1(c,d){
 //   console.log("fsdfs");
 //  return this.http.post("http://localhost:3000/image1",{"Name":c,"Extension":d});
@@ -37,11 +42,21 @@ events(title,name,ext,link){
 getToken(){ 
   return this.token;
 }
-get_blog(){
-return this.http.get(this.url+"get_blog")
+get_news(){
+return this.http.get(this.url+"get_news");
 }
+
+get_blog1(title){
+  return this.http.post(this.url+"get_blog1",{"Title":title});
+  }
+
+  get_news1(title){
+    return this.http.post(this.url+"get_news1",{"Title":title});
+    }
+
 get_events(){
-    return this.http.get(this.url+"get_events")
+  console.log("i was here")
+    return this.http.get(this.url+"get_events");
 }
 get_blogs(){
   const queryParams=`?page=${this.currentpage}`
@@ -136,7 +151,7 @@ private clearAuthData(){
   localStorage.removeItem('expiration')
 }
 show(img,ext){
-  return this.http.post("http://localhost:3000/getimage",{"img":img,'ext':ext});
+  return this.http.post("api/getimage",{"img":img,'ext':ext});
 }
 signin(username,password){
   return this.http.post(this.url+"signin",{"Username":username,"Password":password})

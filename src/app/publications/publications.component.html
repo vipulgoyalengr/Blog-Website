@@ -4,16 +4,16 @@
 <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <!------ Include the above in your HEAD tag ---------->
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  -->
 
 <!--
     instagram: www.instagram.com/programmingtutorial
     site: programlamadersleri.net
 -->
+<!-- <button class="btn btn-hero btn-lg" role="button" *ngIf="!t1.activate" routerLink = '../guides' routerLinkActive='active'>ADD BLOGS</button> -->
 
-<section id="blog" *ngIf="x.length >0">
-    <button class="btn btn-hero btn-lg" role="button" *ngIf="!t1.activate" routerLink = '../guides' routerLinkActive='active'>ADD BLOGS</button>
+<!-- <section id="blog" *ngIf="x.length >0">
 
       <div class="container" >
 	  
@@ -31,7 +31,7 @@
                         <img [src]="i.upload" alt="" width="100%">
                         <br><br>
                         <h3 ><b>{{i.Title}}</b></h3>
-                        <p style="font-size:14px;">{{i.c1 | slice:1:100}}...</p>
+                        <p style="font-size:14px;">{{i.c1 | slice:0:100}}...</p>
                         <p style="font-size:12px;"> 
                             | <i class="icon-user"></i> <a href="#">{{i.Author}}</a> 
                             | <i class="icon-calendar"></i> Sept 16th, 2012 at 4:20 pm
@@ -40,7 +40,7 @@
                         </p>
                         <a href="#" style="font-size:14px;">Read More</a>
                     </div>
-                </div>
+                </div> -->
                 
                 <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up">
                     <div class="blog column text-center">
@@ -61,12 +61,153 @@
                     </div>
                 </div> -->
             
-        </div>  <!-- row -->
+        <!-- </div>  row
             
     </div>
-</section>
+</section> -->
 
 
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <div class="container" *ngIf="x.length >0">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 text-center">  
+        <h2><span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span></h2> -->
+        <!-- <p style="font-size:14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br> -->
+    <!-- </div> 
+</div> 
+<div class="row" *ngFor="let i of x" style="font-size: large;">
+  <div class="span12">
+    <div class="row">
+      <div  style="margin: auto; ">
+        <h4 style="font-size:xx-large; color: black;"><strong><a href="#">{{i.Title}}</a></strong></h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span2" style="margin: auto; width: 250px;">
+        <a href="#" class="thumbnail">
+            <img [src]="i.upload" alt="blog"  >
+        </a>
+      </div>
+      <div class="span10">      
+        <p>{{i.c1 | slice:0:500}}...        </p> -->
+        <!-- <a class="btn btn-primary btn-lg btn-block btn-huge" href="#" style="font-size: large;">Read more</a>
+         -->
+<!--          
+         <button class="btn btn-hero btn-lg" role="button" [routerLink]="['../blog',i.Title]" routerLinkActive="active">Read More</button>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="span8" style="margin: auto;">
+        <p></p>
+        <p>
+          <i class="icon-user"></i> by <a href="#">{{i.Author}}</a> 
+          | <i class="icon-calendar"></i> Sept 16th, 2012 -->
+          <!-- | <i class="icon-comment"></i> <a href="#">3 Comments</a>
+          | <i class="icon-share"></i> <a href="#">39 Shares</a> -->
+          <!-- | <i class="icon-tags"></i> Tags : <a href="#"><span class="label label-info">Snipp</span></a>  -->
+          <!-- <a href="#"><span class="label label-info">Bootstrap</span></a> 
+          <a href="#"><span class="label label-info">UI</span></a> 
+          <a href="#"><span class="label label-info">growth</span></a> -->
+        <!-- </p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  
+ 
+</div> -->
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="span12">
+    <div class="row">
+      <div class="span8">
+        <h4><strong><a href="#">Title of the post</a></strong></h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span2">
+        <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+        </a>
+      </div>
+      <div class="span10">      
+        <p>
+          Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+        </p>
+        <p><a class="btn" href="#">Read more</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <p></p>
+        <p>
+          <i class="icon-user"></i> by <a href="#">John</a> 
+          | <i class="icon-calendar"></i> Sept 16th, 2012
+          | <i class="icon-comment"></i> <a href="#">3 Comments</a>
+          | <i class="icon-share"></i> <a href="#">39 Shares</a>
+          | <i class="icon-tags"></i> Tags : <a href="#"><span class="label label-info">Snipp</span></a> 
+          <a href="#"><span class="label label-info">Bootstrap</span></a> 
+          <a href="#"><span class="label label-info">UI</span></a> 
+          <a href="#"><span class="label label-info">growth</span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="span12">
+    <div class="row">
+      <div class="span8">
+        <h4><strong><a href="#">Title of the post</a></strong></h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span2">
+        <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+        </a>
+      </div>
+      <div class="span10">      
+        <p>
+          Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+        </p>
+        <p><a class="btn" href="#">Read more</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <p></p>
+        <p>
+          <i class="icon-user"></i> by <a href="#">John</a> 
+          | <i class="icon-calendar"></i> Sept 16th, 2012
+          | <i class="icon-comment"></i> <a href="#">3 Comments</a>
+          | <i class="icon-share"></i> <a href="#">39 Shares</a>
+          | <i class="icon-tags"></i> Tags : <a href="#"><span class="label label-info">Snipp</span></a> 
+          <a href="#"><span class="label label-info">Bootstrap</span></a> 
+          <a href="#"><span class="label label-info">UI</span></a> 
+          <a href="#"><span class="label label-info">growth</span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr> -->
+
+
+<!-- IMP DIV-->
+<!-- </div> -->
 
 
 
@@ -234,13 +375,12 @@
 
 <!-- ---- Include the above in your HEAD tag -------- -->
 
-
+<!-- 
 					<div class="qty mt-5">
                         <span class="minus bg-dark" (click)="decrement()" *ngIf="t1.count && t1.count1"><</span>
-                        <!-- <input type="number" class="count" name="qty" value="1"> -->
                         <span class="plus bg-dark" (click)="increment()" *ngIf="t1.count1">></span>
                     </div>
-<br>
+<br> -->
 
 
                     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -340,3 +480,332 @@
                                    <!-- <div class="col-md-12 gap10"></div>
                                  </div>
                     </div> -->
+
+
+
+
+                    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog - Moderna Bootstrap Template</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v2.1.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Lex Imperium Human Rights Blog(LIHR)</h2>
+
+          <!-- <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Blog</li>
+          </ol> -->
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section class="blog" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="font-size: medium;">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry" *ngFor="let i of x">
+
+              <div class="entry-img">
+                <img [src]="i.upload" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title" >
+                <a href="blog-single.html" style="color: black;">{{i.Title}}
+                  </a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">{{i.Author}}
+                      </a></li>
+                  <!-- <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12
+                      Comments</a></li> -->
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  {{i.c1 | slice:0:500.....}}
+                </p>
+                <div class="read-more"   >
+                  <a [routerLink]="['../blog',i.Title]" routerLinkActive="active" style="background-color:#18d26e;">Read More</a>
+                </div>
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <!-- <article class="entry">
+
+              <div class="entry-img">
+                <img src="assets/img/blog-post-2.jpg" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John
+                      Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12
+                      Comments</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo
+                  libero rerum voluptatem pariatur nam.
+                  Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia
+                  molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et
+                  sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
+                </p>
+                <div class="read-more">
+                  <a href="blog-single.html">Read More</a>
+                </div>
+              </div>
+
+            </article>End blog entry -->
+
+            <!-- <article class="entry">
+
+              <div class="entry-img">
+                <img src="assets/img/blog-post-3.jpg" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="blog-single.html">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit
+                  sint.</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John
+                      Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12
+                      Comments</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et.
+                  Eum temporibus fugiat voluptate enim tenetur sunt omnis.
+                  Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
+                </p>
+                <div class="read-more">
+                  <a href="blog-single.html">Read More</a>
+                </div>
+              </div>
+
+            </article>End blog entry -->
+
+            <!-- <article class="entry">
+
+              <div class="entry-img">
+                <img src="assets/img/blog-post-4.jpg" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="blog-single.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius
+                  exercitationem. Veniam eius velit ab ipsa quidem rem.</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John
+                      Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12
+                      Comments</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum
+                  enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+                  Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui
+                  voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat
+                  magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
+                </p>
+                <div class="read-more">
+                  <a href="blog-single.html">Read More</a>
+                </div>
+              </div>
+
+            </article>End blog entry -->
+
+            <div class="blog-pagination">
+              <ul class="justify-content-center">
+                <li (click)="decrement()" *ngIf="t1.count && !t1.count1"><i class="icofont-rounded-left"></i></li>
+                <!-- <li><a href="#">1</a></li> -->
+                <!-- <li class="active"><a href="#">2</a></li> -->
+                <!-- <li><a href="#">3</a></li> -->
+                <li (click)="increment()" *ngIf="t1.count1"><a ><i class="icofont-rounded-right"></i></a></li>
+              </ul>
+            </div>
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+            <div class="sidebar">
+
+              <!-- <h3 class="sidebar-title">Search</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="icofont-search"></i></button>
+                </form>
+              </div>End sidebar search formn -->
+
+              <!-- <h3 class="sidebar-title">Categories</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li><a href="#">General <span>(25)</span></a></li>
+                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                  <li><a href="#">Travel <span>(5)</span></a></li>
+                  <li><a href="#">Design <span>(22)</span></a></li>
+                  <li><a href="#">Creative <span>(8)</span></a></li>
+                  <li><a href="#">Educaion <span>(14)</span></a></li>
+                </ul>
+
+              </div>End sidebar categories -->
+
+              <h3 class="sidebar-title">Advertisement</h3>
+              <div class="sidebar-item recent-posts">
+                <!-- <p> No More Post</p> -->
+                <div class="post-item clearfix">
+                  <a href="https://instagram.com/designawarts_98"><img src="assets/img/q1.jpeg" alt=""></a>
+                  <h4><a href="https://instagram.com/designawarts_98">EYES CAN SPEAK - A true masterpiece of an art bringing out the beauty of  bygone Egyptian Goddesses. The creator Udita Goel has tried to bring out the beauty in this girl not through her face rather her eyes.</a></h4>
+                  <a href="https://instagram.com/designawarts_98"><time datetime="2020-01-01">Designawarts_98</time></a>
+                </div>
+
+                <div class="post-item clearfix">
+                  <a href="https://instagram.com/designawarts_98"> <img src="assets/img/q2.jpeg" alt=""></a>
+                  <h4><a href="https://instagram.com/designawarts_98">Double exposure- A blend of beauty and nature forged into one by the skillful artistry of Udita Goel. Tap the image to view more such content.</a></h4>
+                  <a href="https://instagram.com/designawarts_98"><time datetime="2020-01-01">Designawarts_98</time></a>
+                </div>
+
+                <div class="post-item clearfix">
+                  <a href="https://instagram.com/designawarts_98"><img src="assets/img/q3.jpeg" alt=""></a>
+                  <h4><a href="https://instagram.com/designawarts_98">SILENT BEAUTY- A potrait of a beautiful girl lost in another world contemplating her thoughts. An art presented to you by Udita Goel. Click on the art to know more.</a></h4>
+                  <a href="https://instagram.com/designawarts_98"><time datetime="2020-01-01">Designawarts_98</time></a>
+                </div>
+
+                <!-- <div class="post-item clearfix">
+                  <img src="assets/img/events-1.jpg" alt="">
+                  <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/events-1.jpg" alt="">
+                  <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div> -->
+              </div><!-- End sidebar recent posts-->
+
+              <!-- <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+                <ul>
+                  <li><a href="#">App</a></li>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Studio</a></li>
+                  <li><a href="#">Smart</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+
+              </div>End sidebar tags -->
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div><!-- End .row -->
+
+      </div><!-- End .container -->
+
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

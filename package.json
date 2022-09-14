@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "preinstall": "npm install -g angular-cli"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -27,11 +26,16 @@
     "bootstrap4": "0.0.1-security",
     "chokidar": "^2.1.8",
     "fs": "0.0.1-security",
+    "jquery": "^3.5.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.20",
+    "loader": "^2.1.1",
+    "mongoose": "^5.9.24",
+    "ng6-toastr-notifications": "^1.0.4",
     "ngx-spinner": "^9.0.2",
+    "ngx-toastr": "^13.0.0",
     "request": "^2.88.2",
     "rxjs": "~6.5.4",
+    "toastr": "^2.1.4",
     "tslib": "^1.10.0",
     "upgrade": "^1.1.0",
     "zone.js": "~0.10.2"

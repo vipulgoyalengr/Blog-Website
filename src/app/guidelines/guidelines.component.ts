@@ -56,7 +56,7 @@ cont(){
    // console.log(this.imgUri);
    this.ext=this.img.substring(this.slashIndex+1,this.semiColonIndex);
    // console.log(this.ext);
-   this.name="image"+this.ctr;
+   this.name="image"+this.title;
    this.ctr++;
   this.tst.save_img(this.name,this.ext,this.imgUri).subscribe((res)=>{
     console.log(res);
